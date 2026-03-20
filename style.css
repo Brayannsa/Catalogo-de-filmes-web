@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(204, 0, 255); /* Escolha sua cor aqui */
+    background-color: rgb(0, 0, 0); /* Escolha sua cor aqui */
 }
 
 div{ /*para centralizar a div*/
@@ -7,4 +7,11 @@ div{ /*para centralizar a div*/
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    border: 2px solid rgba(255, 0, 0, 0.74);
+    margin: 50px;
+
+    color: brown;
+    font-size: large;
+
 }
