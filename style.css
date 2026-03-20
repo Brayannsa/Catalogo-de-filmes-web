@@ -1,0 +1,10 @@
+body {
+    background-color: rgb(204, 0, 255); /* Escolha sua cor aqui */
+}
+
+div{ /*para centralizar a div*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
