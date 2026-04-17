@@ -1,17 +1,80 @@
 body {
-    background-color: rgb(0, 0, 0); /* Escolha sua cor aqui */
+    font-family: Arial, sans-serif;
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 50px;
+    
+    /* Alinha os itens lado a lado */
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: flex-start; /* Alinha os cards pelo topo */
+    gap: 20px; /* Cria um espaço entre um card e outro */
+    min-height: 100vh;
 }
 
-div{ /*para centralizar a div*/
+.card {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-
+    align-items: center;
     border: 2px solid rgba(255, 0, 0, 0.74);
-    margin: 50px;
-
+    padding: 30px;
     color: brown;
-    font-size: large;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    width: fit-content; /* Faz o card se ajustar ao conteúdo */
+}
 
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: brown;
+}
+
+form {
+    width: 350px;
+    padding: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%; 
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px; 
+    border: 1px solid #999;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white; 
+    border: none; 
+    border-radius: 3px;
+    cursor: pointer; 
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+hr {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid rgba(255, 0, 0, 0.3);
+    margin: 20px 0;
+}
+
+img {
+    border-radius: 5px;
 }

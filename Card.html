@@ -1,23 +1,50 @@
-<!DOCTYPE html><!---Identifica o arquivo como html-->
-<html lang="en"> <!--Identificar ocomo o html e definir linha-->
-<head> <!---Cabeçalho do metadados-->
-    <meta charset="UTF-8"> <!---Define conjunto de characteres-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!---Impede o site ficar pequeno-->
-    <title>Document</title><!-----Titulo da aba-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card com Formulário</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-<body><!---Mosta todos elementos visuais da pag-->
-    <div class = "card">
-        <!--atributos da classe card-->
+<body>
+
+    <div class="card">
+        <div>
+            <img src="Batman.jpg" alt="Capa do filme" width="300">
+            <h2 style="font-size: 30px;">The Batman</h2>
+        </div>
+
+        <hr> 
         
-        <div> <!--Serve para criar "caixas" ou blocos-->
+        <div class="form-container">
+            <h3>Cadastrar Novo Filme</h3>
+            <form>
+                <label>Nome do Filme:</label><br>
+                <input type="text" name="nome"><br><br>
+            
+                <label>URL da Imagem:</label><br>
+                <input type="url" name="imagem"><br><br>
 
-        <img src="Batman.jpg" alt="Capa do filme" width="300"> <!--Serve para mostrar fotos.-->
-        <h2 style="font-size: 30px;">The Batman</h2> <!---É um título. O "2" significa que ele é um subtítulo (o <h1> seria o principal).-->
-
-    
+                <label>Descrição:</label><br>
+                <input type="text" name="descricao"><br><br>
+            
+                <button type="submit">Cadastrar</button>
+            </form>
+            <br>
+            <button onclick="alterarFundo()">Clique aqui!</button>
+        </div>
     </div>
 
+    <div class="card">
+        <img src="url" alt="Filme 2" width="300">
+        <h2>Nome do Filme</h2>
     </div>
+
+    <div class="card">
+        <img src="url" alt="Filme 3" width="300">
+        <h2>Nome do Filme</h2>
+    </div>
+
 </body>
 </html>
